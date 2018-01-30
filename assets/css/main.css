@@ -1,1 +1,166 @@
+/* clases de bootstrap*/
+.col-xs-12 {
+  padding: 0;
+}
 
+.row {
+  margin: 0;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-nav>li>a {
+  padding: 30px 15px 30px 15px;
+}
+
+.navbarPortafolio {
+  background-color: #000D0B !important;
+}
+.logo {
+  width: 20%;
+  /*padding-bottom: 1%;*/
+}
+.navbar-brand {
+  padding: 0;
+}
+
+.text-nav {
+  color: #F2F2F2 !important;
+}
+
+.text-nav:hover {
+  color: #03A696 !important;
+  /*color: #027367 !important;*/
+}
+
+#image {
+  height: 100vh;
+  background-image: url('../images/coder.jpg');
+  /*background-color: rgba(1,64,57,1);*/
+  filter:brightness(0.7);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.userImg {
+  padding: 3%;
+  width: 50%;
+  display: inline-block;
+}
+
+.btnUp {
+  margin: 3%;
+  background-color: #027367;
+  color: #F2F2F2;
+}
+
+.btnUp:hover {
+  background-color: #F2F2F2;
+  color: #014039;
+}
+
+/* setction portafolio*/
+
+.contImgUnicorn {
+  display: inline-block;
+  padding: 3% 0 3% 0;
+}
+.imgUnicorn {
+  width: 15%;
+  background-color: red;
+}
+
+.contImgUnicorn::before, .contImgUnicorn::after {
+    content: "";
+    border: 2px solid #000;
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 0.6%;
+    margin-right: 0.4%;
+}
+
+/* portafolio carrusel*/
+
+/*desde aqui clases del carrusel*/
+.glyphicon-chevron-left {
+  left: 20% !important;
+}
+.glyphicon-chevron-right {
+  right: 20% !important;
+}
+.multi-item-carousel {
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control {
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+.btn-up {
+  margin: 10% 0 10% 0;
+  background-color: #027367;
+  color: #F2F2F2;
+}
+.contorno{
+  outline: 1px solid #d2d4d5;
+}
+.card p{
+  margin: 4%; 
+  margin-bottom: 10%;
+  padding-bottom: 4%; 
+}
+.card h3{
+  margin: 4%;
+}
+.card img{
+  padding: 3%; 
+  border-bottom: 1px solid #d2d4d5;
+  width: 100%;
+}
+
+.button{
+  border-top: 1px solid #d2d4d5;
+}

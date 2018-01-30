@@ -1,86 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Portafolio</title>
-
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bookblock.css">
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/demo4.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbarPortafolio">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="" alt=""></a>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="btn-nav1"><a href="#" class="text-nav"><strong>Portafolio</strong></a></li>
+            <li><a href="#" class="text-nav btn-nav2"><strong>Sobre Mi</strong></a></li>
+            <li><a href="#" class="text-nav btn-nav3"><strong>Contacto</strong></a></li>
           </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
    </header>
   <section>
-    
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="image"></div>
+        <div class="name">
+          <h2>Carolina Silva Guzmán</h2>
+          <span>Desarroladora Web</span>
+          <div>
+            <img src="assets/images/usuaria.jpg" class="img-responsive img-circle userImg" alt="">
+          </div>
+          <button class="btn btn-default btnUp" type="submit">Portafolio</button>
+          <button class="btn btn-default btnUp" type="submit">Sobre Mi</button> 
+        </div>
+      </div>
+    </div>
   </section>
   <section>
-    
+    <div class="text-center">
+      <h2 class="text-center"><strong>PORTFOLIO</strong></h2>
+      <div class="text-center contImgUnicorn">
+        <img class="imgUnicorn" src="assets/images/uni1.png" alt="">
+      </div>
+    </div>
+    <!-- <h1>Use Bootstrap's carousel to show multiple items per slide.</h1> -->
+    <div class="row space">
+      <div class="col-md-12">
+        <div class="carousel slide multi-item-carousel" id="theCarousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1"><img class="portafolio-contenedor img-responsive" src="assets/images/coder.jpg"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">About</button> 
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1"><img class="portafolio-contenedor img-responsive" src="assets/images/coder2.jpg"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">About</button>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1"><img class="portafolio-contenedor img-responsive" src="assets/images/coder3.jpg"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btnUp" href="http://laweb.com" type="submit">About</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1" id="terror" value=""><img class="portafolio-contenedor img-responsive" src="assets/images/coder.jpg"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btnUp" href="http://laweb.com" type="submit">About</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1"><img class="portafolio-contenedor img-responsive" src="assets/images/coder2.jpg" class="img-responsive"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btnUp" href="http://laweb.com" type="submit">About</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1"><img class="portafolio-contenedor img-responsive" src="assets/images/coder3.jpg"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btnUp" href="http://laweb.com" type="submit">About</button>
+                </div>
+              </div>
+            </div>
+            <!-- add  more items here -->
+            <!-- Example item start:  -->
+
+            <div class="item">
+              <div class="col-xs-4 portafolio">
+                <div class="contorno">
+                  <a href="#1"><img class="portafolio-contenedor img-responsive" src="assets/images/coder.jpg"></a>
+                  <h3>Card title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
+                  <button class="btn btn-default btnUp" href="http://laweb.com" type="submit">About</button>
+                </div>
+              </div>
+            </div>
+
+            <!--  Example item end -->
+          </div>
+          <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
   </section>
   <section>
-    
+    <div class="text-center">
+      <h2>Acerca de Mi</h2>
+    </div>
+    <div class="container">
+      <div class="bb-custom-wrapper">
+        <div id="bb-bookblock" class="bb-bookblock">
+          <div class="bb-item">
+            <div class="bb-custom-firstpage">
+              <h1>BookBlock <span>A Content Flip Plugin</span></h1> 
+              <nav class="codrops-demos">
+                <a href="index.html">Demo 1</a>
+                <a href="index2.html">Demo 2</a>
+                <a href="index3.html">Demo 3</a>
+                <a class="current-demo" href="index4.html">Demo 4</a>
+                <a href="index5.html">Demo 5</a>
+              </nav>
+              <nav class="codrops-nav">
+                <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/codrops/2012/08/29/multiple-area-charts-with-d3-js/"><span>Previous Demo</span></a>
+                <a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/2012/09/03/bookblock-a-content-flip-plugin/"><span>Back to the Codrops Article</span></a>
+              </nav>
+            </div>
+            <div class="bb-custom-side">
+              <p>Pastry bear claw oat cake danish croissant jujubes danish. Wypas soufflé muffin. Liquorice powder pastry danish. Candy toffee gummi bears chocolate bar lollipop applicake chocolate cake danish brownie.</p>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side">
+              <p>Soufflé tootsie roll jelly beans. Sweet icing croissant dessert bear claw. Brownie dessert cheesecake danish jelly pudding bear claw soufflé.</p>
+            </div>
+            <div class="bb-custom-side">
+              <p>Candy canes lollipop macaroon marshmallow gummi bears tiramisu. Dessert croissant cupcake candy canes. Bear claw faworki faworki lemon drops. Faworki marzipan sugar plum jelly-o marzipan jelly-o.</p>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side">
+              <p>Croissant pudding gingerbread gummi bears marshmallow halvah. Wafer donut croissant. Cookie muffin jelly beans pie croissant croissant candy canes jelly marshmallow.</p>
+            </div>
+            <div class="bb-custom-side">
+              <p>Wafer donut caramels chocolate caramels sweet roll. Gummi bears powder candy chocolate cake gummi bears icing wafer cupcake. Brownie cotton candy pastry chocolate wypas.</p>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side">
+              <p>Marzipan dragée candy canes chocolate cake. Soufflé faworki jelly gingerbread cupcake. Powder gummies applicake.</p>
+            </div>
+            <div class="bb-custom-side">
+              <p>Cotton candy caramels tootsie roll soufflé powder lemon drops carrot cake danish. Cotton candy candy canes fruitcake muffin gingerbread. Jujubes soufflé gingerbread donut donut.</p>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side">
+              <p>Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.</p>
+            </div>
+            <div class="bb-custom-side">
+              <p>Chocolate bar tiramisu marzipan. Croissant soufflé croissant lollipop liquorice dragée chupa chups carrot cake. Liquorice lollipop halvah toffee lollipop.</p>
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+          <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+          <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+          <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+        </nav>
+      </div>
+    </div><!-- /container -->
+  </section>
+  <section>
+    <div class="text-center">
+      <h2><strong>CONTACTARME</strong></h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <form action="">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input class="form-control" type="text" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Número de Contacto</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Teléfono">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Mensaje</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-6">
+        <h3 class="text-center">Información de Contacto</h3>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Dirección</label>
+          <div class="col-sm-10">
+            <p>Ejercito Libertador 2120 casa 426, Puente Alto</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <p>carolinasguzman@gmail.com</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Mobil</label>
+          <div class="col-sm-10">
+            <p>+569-66705559</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <footer>
     
   </footer>
+  <script src="assets/js/modernizr.custom.js"></script>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.bookblock.min.js"></script>
+  <!-- <script>
+    Page.init();
+  </script> -->
   <!-- para utilizar firebase -->
   <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
   <script src="assets/js/app.js"></script>
+  <script>Page.init();</script>
 </body>
 </html>

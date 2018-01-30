@@ -1,58 +1,57 @@
-$(document).ready(function(){
-  /*para cuando el scroll baja*/
-  function changeMenuByScroll(){
-    if($(this).scrollTop() > 100){
-      $('.navbar-nav>li>a').css({'padding':'20px'});
-    } else{
-      $('.navbar-nav>li>a').css({'padding':'30px 20px 30px 20px'});
+$(document).ready(function() {
+/* para cuando el scroll baja */
+  function changeMenuByScroll() {
+    if ($(this).scrollTop() > 100) {
+      $('.navbar-nav>li>a').css({'padding': '20px'});
+    } else {
+      $('.navbar-nav>li>a').css({'padding': '30px 20px 30px 20px'});
       $('.btn-up').css({'margin': '15% 0 15% 0'});
     }
-    if($(this).scrollTop() > 760 & $(this).scrollTop() < 1600){
+    if ($(this).scrollTop() > 760 & $(this).scrollTop() < 1600) {
       $('.btn-nav1>a').wrap('<button class="btn btn-default btn-up" type="submit"></button>');
-    } else{
-      $('.text-nav').parent('btn-up').remove();
+    } else {
+      $('.text-nav1').parent().remove();
     }
-    if($(this).scrollTop() > 1600 & $(this).scrollTop() < 2300){
+    if ($(this).scrollTop() > 1600 & $(this).scrollTop() < 2300) {
       $('.btn-nav2>a').wrap('<button class="btn btn-default btn-up" type="submit"></button>');
-    } else{
+    } else {
       $('.about').removeClass('fondo-verde');
     }
-    if($(this).scrollTop() > 2300){
+    if ($(this).scrollTop() > 2300) {
       $('.btn-nav3>a').wrap('<button class="btn btn-default btn-up" type="submit"></button>');
-    } else{
+    } else {
       $('.contact').removeClass('fondo-verde');
     }
-
   }
-  /*llamo a la funcion cuando empieza el programa y coloca el header
-  dependiendo del lugar en cual esta*/
+// llamo a la funcion cuando empieza el programa y coloca el header dependiendo del lugar en cual esta 
+
   changeMenuByScroll();
-  /*cada ves que se mueve el scroll*/
-  $(window).scroll(function(){
+
+// cada ves que se mueve el scroll
+
+  $(window).scroll(function() {
     changeMenuByScroll();
   });
-
-
 });
 
 // fondo de presentacion
-var arrImagenes = [ 'assets/images/coder.jpg','assets/images/coder2.jpg', 'assets/images/coder3.jpg', 'assets/images/gustos.png' ];
+var arrImagenes = ['assets/images/coder.jpg', 'assets/images/coder2.jpg', 'assets/images/coder3.jpg', 'assets/images/gustos.png' ];
 var imagenActual = 'assets/images/coder.jpg';
-var id_contenedor = 'image';
-setInterval (function(){
-  do{
-    var imgRand = arrImagenes[Math.ceil(Math.random()*(arrImagenes.length-1))];
-  }while (imgRand == imagenActual);
+var idContenedor = 'image';
+setInterval (function() {
+  do {
+    var imgRand = arrImagenes[Math.ceil(Math.random() * (arrImagenes.length - 1))];
+  } while (imgRand == imagenActual);
   imagenActual = imgRand;
-  cambiarImagenFondo(imagenActual, id_contenedor);
+  cambiarImagenFondo(imagenActual, idContenedor);
 }, 10000);
 
 
-function cambiarImagenFondo(nuevaImagen, contenedor){
+function cambiarImagenFondo(nuevaImagen, contenedor) {
   console.log(nuevaImagen, contenedor);
   var contenedor = $('#' + contenedor);
-  contenedor.css("background-image", 'url(' + nuevaImagen + ')');
-  //cargar imagen primero
+  contenedor.css('background-image', 'url(' + nuevaImagen + ')');
+  // cargar imagen primero
   // var tempImagen = new Image();
   // $(tempImagen).load( function(){
   //   contenedor.css('backgroundImage', 'url('+tempImagen.src+')');
@@ -64,18 +63,18 @@ function cambiarImagenFondo(nuevaImagen, contenedor){
 
 var Page = (function() {      
   var config = {
-    $bookBlock : $( '#bb-bookblock' ),
-    $navNext : $( '#bb-nav-next' ),
-    $navPrev : $( '#bb-nav-prev' ),
-    $navFirst : $( '#bb-nav-first' ),
-    $navLast : $( '#bb-nav-last' )
+    $bookBlock : $('#bb-bookblock'),
+    $navNext : $('#bb-nav-next'),
+    $navPrev : $('#bb-nav-prev'),
+    $navFirst : $('#bb-nav-first'),
+    $navLast : $('#bb-nav-last')
   },
   init = function() {
-    config.$bookBlock.bookblock( {
+    config.$bookBlock.bookblock({
       speed : 1000,
       shadowSides : 0.8,
       shadowFlip : 0.4
-    } );
+    });
     initEvents();
   },
   initEvents = function() {
@@ -83,40 +82,40 @@ var Page = (function() {
     var $slides = config.$bookBlock.children();
 
     // add navigation events
-    config.$navNext.on( 'click touchstart', function() {
-      config.$bookBlock.bookblock( 'next' );
+    config.$navNext.on('click touchstart', function() {
+      config.$bookBlock.bookblock('next');
       return false;
-    } );
+    });
 
-    config.$navPrev.on( 'click touchstart', function() {
-      config.$bookBlock.bookblock( 'prev' );
+    config.$navPrev.on('click touchstart', function() {
+      config.$bookBlock.bookblock('prev');
       return false;
-    } );
+    });
 
-    config.$navFirst.on( 'click touchstart', function() {
-      config.$bookBlock.bookblock( 'first' );
+    config.$navFirst.on('click touchstart', function() {
+      config.$bookBlock.bookblock('first');
       return false;
-    } );
+    });
 
-    config.$navLast.on( 'click touchstart', function() {
-      config.$bookBlock.bookblock( 'last' );
+    config.$navLast.on('click touchstart', function() {
+      config.$bookBlock.bookblock('last');
       return false;
-    } );
+    });
     
     // add swipe events
-    $slides.on( {
-      'swipeleft' : function( event ) {
-        config.$bookBlock.bookblock( 'next' );
+    $slides.on({
+      ' swipeleft' : function(event) {
+        config.$bookBlock.bookblock('next');
         return false;
       },
-      'swiperight' : function( event ) {
-        config.$bookBlock.bookblock( 'prev' );
+      ' swiperight' : function(event) {
+        config.$bookBlock.bookblock('prev');
         return false;
       }
-    } );
+    });
 
     // add keyboard events
-    $( document ).keydown( function(e) {
+    $(document).keydown(function(e) {
       var keyCode = e.keyCode || e.which,
         arrow = {
           left : 37,
@@ -127,20 +126,19 @@ var Page = (function() {
 
       switch (keyCode) {
         case arrow.left:
-          config.$bookBlock.bookblock( 'prev' );
+          config.$bookBlock.bookblock('prev');
           break;
         case arrow.right:
-          config.$bookBlock.bookblock( 'next' );
+          config.$bookBlock.bookblock('next');
           break;
       }
-    } );
+    });
   };
 
-  return { init : init };
-
+  return { init: init };
 })();
 
-/*carrusel*/
+// carrusel
 
 // Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
@@ -150,39 +148,16 @@ $('.multi-item-carousel').carousel({
 
 // para cada diapositiva en el carrusel, copie el ítem de la siguiente diapositiva en la diapositiva.
 // Haz lo mismo para el próximo, siguiente artículo.
-$('.multi-item-carousel .item').each(function(){
+$('.multi-item-carousel .item').each(function() {
   var next = $(this).next();
   if (!next.length) {
     next = $(this).siblings(':first');
   }
   next.children(':first-child').clone().appendTo($(this));
   
-  if (next.next().length>0) {
+  if (next.next().length > 0) {
     next.next().children(':first-child').clone().appendTo($(this));
   } else {
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
-
-/*$('.multi-item-carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-
-    if (next.next().next().length > 0) {
-          next.next().next().children(':first-child').clone().appendTo($(this));
-     } else {
-       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-     }
-  } else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
-
-});*/
-
-

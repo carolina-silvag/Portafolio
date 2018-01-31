@@ -23,7 +23,7 @@ $(document).ready(function() {
       $('.backgraundText3').removeClass('textBackgraund');
     }
   }
-  // llamo a la funcion cuando empieza el programa y coloca el header dependiendo del lugar en cual esta 
+  // llamo a la funcion cuando empieza el programa  
 
   changeMenuByScroll();
 
@@ -102,11 +102,11 @@ var Page = (function() {
       
       // add swipe events
       $slides.on({
-        ' swipeleft' : function(event) {
+        'swipeleft': function(event) {
           config.$bookBlock.bookblock('next');
           return false;
         },
-        ' swiperight' : function(event) {
+        'swiperight': function(event) {
           config.$bookBlock.bookblock('prev');
           return false;
         }

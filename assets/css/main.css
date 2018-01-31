@@ -94,13 +94,12 @@
 }
 .contImgUnicorn {
   display: inline-block;
-  padding: 3% 0 3% 0;
-}
-.imgUnicorn {
-  color: #F2F2F2;
-  width: 15%;
+  padding: 2% 0 2% 0;
 }
 
+.imgUnicorn {
+  width: 15%;
+}
 .contImgUnicorn::before, .contImgUnicorn::after {
   content: "";
   border: 2px solid #000D0B;
@@ -191,4 +190,22 @@
 .btnBook {
   background-color: #027367 !important;
   color:#F2F2F2 !important;
+}
+
+.contImgUnicorn2 {
+  display: inline-block;
+  padding: 2% 0 2% 0;
+}
+
+.imgUnicorn2 {
+  width: 15%;
+}
+
+.contImgUnicorn2::before, .contImgUnicorn2::after {
+  content: "";
+  border: 2px solid #F2F2F2;
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 0.6%;
+  margin-right: 0.4%;
 }

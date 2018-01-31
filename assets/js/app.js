@@ -5,22 +5,22 @@ $(document).ready(function(){
       $('.navbar-nav>li>a').css({'padding':'20px'});
     } else{
       $('.navbar-nav>li>a').css({'padding':'30px 20px 30px 20px'});
-      $('.btn-up').css({'margin': '15% 0 15% 0'});
+      $('.btn-up').css({'margin': '20% 0 20% 0'});
     }
-    if($(this).scrollTop() > 760 & $(this).scrollTop() < 1600){
-      $('.btn-nav1>a').wrap('<button class="btn btn-default btn-up" type="submit"></button>');
+    if($(this).scrollTop() > 600 & $(this).scrollTop() < 1370){
+      $('.backgraundText1').addClass('textBackgraund');
     } else{
-      $('.text-nav').parent('btn-up').remove();
+      $('.backgraundText1').removeClass('textBackgraund');
     }
-    if($(this).scrollTop() > 1600 & $(this).scrollTop() < 2300){
-      $('.btn-nav2>a').wrap('<button class="btn btn-default btn-up" type="submit"></button>');
+    if($(this).scrollTop() > 1370 & $(this).scrollTop() < 2300){
+      $('.backgraundText2').addClass('textBackgraund');
     } else{
-      $('.about').removeClass('fondo-verde');
+      $('.backgraundText2').removeClass('textBackgraund');
     }
     if($(this).scrollTop() > 2300){
-      $('.btn-nav3>a').wrap('<button class="btn btn-default btn-up" type="submit"></button>');
+      $('.backgraundText3').addClass('textBackgraund');
     } else{
-      $('.contact').removeClass('fondo-verde');
+      $('.backgraundText3').removeClass('textBackgraund');
     }
 
   }

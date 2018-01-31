@@ -1,5 +1,5 @@
 /* clases de bootstrap*/
-.col-xs-12 {
+.col-xs-12, .col-md-12 {
   padding: 0;
 }
 
@@ -11,6 +11,7 @@
   margin: 0;
 }
 
+/* navegador*/
 .navbar-nav>li>a {
   padding: 30px 15px 30px 15px;
 }
@@ -20,7 +21,6 @@
 }
 .logo {
   width: 20%;
-  /*padding-bottom: 1%;*/
 }
 .navbar-brand {
   padding: 0;
@@ -34,16 +34,25 @@
   color: #03A696 !important;
   /*color: #027367 !important;*/
 }
+/*#03A696*/
+.textBackgraund {
+  background-color: #027367;
+}
 
+.textBackgraund:hover {
+  background-color: #027367;
+  color: #F2F2F2;
+}
+
+/* primer fondo de user imagen*/
 #image {
   height: 100vh;
   background-image: url('../images/coder.jpg');
-  /*background-color: rgba(1,64,57,1);*/
-  filter:brightness(0.7);
+  filter:brightness(0.5);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #F2F2F2;
 }
 
 .name {
@@ -74,24 +83,35 @@
   color: #014039;
 }
 
-/* setction portafolio*/
-
+/* section portafolio*/
+.subtitle {
+  font-size: 250%;
+  padding-top: 3%;
+}
+.backgraundPortafolio {
+  color: #000D0B;
+  overflow: hidden;
+}
 .contImgUnicorn {
   display: inline-block;
   padding: 3% 0 3% 0;
 }
 .imgUnicorn {
+  color: #F2F2F2;
   width: 15%;
-  background-color: red;
 }
 
 .contImgUnicorn::before, .contImgUnicorn::after {
-    content: "";
-    border: 2px solid #000;
-    display: inline-block;
-    width: 30%;
-    margin-bottom: 0.6%;
-    margin-right: 0.4%;
+  content: "";
+  border: 2px solid #000D0B;
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 0.6%;
+  margin-right: 0.4%;
+}
+
+.imgCarrusel {
+  height: 250px;
 }
 
 /* portafolio carrusel*/
@@ -140,27 +160,35 @@
 }
 
 .btn-up {
-  margin: 10% 0 10% 0;
+  margin: 6% 0 6% 0 !important;
   background-color: #027367;
   color: #F2F2F2;
 }
-.contorno{
-  outline: 1px solid #d2d4d5;
-}
-.card p{
-  margin: 4%; 
-  margin-bottom: 10%;
-  padding-bottom: 4%; 
-}
-.card h3{
-  margin: 4%;
-}
-.card img{
-  padding: 3%; 
-  border-bottom: 1px solid #d2d4d5;
-  width: 100%;
+.outline {
+  outline: 1px solid #014039;
+  padding: 2%;
 }
 
-.button{
-  border-top: 1px solid #d2d4d5;
+.outline {
+  color: #014039; 
+}
+.portafolio {
+  margin: 10px 0 10px 0;
+}
+
+/* section acerca de mi*/
+
+.backgraundAbout {
+  background-color: #03A696;
+  overflow: hidden;
+}
+.about {
+  color: #F2F2F2;
+}
+
+/* pligin libro*/
+
+.btnBook {
+  background-color: #027367 !important;
+  color:#F2F2F2 !important;
 }

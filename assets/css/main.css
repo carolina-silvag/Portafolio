@@ -40,8 +40,8 @@
 }
 
 .textBackgraund:hover {
-  background-color: #027367;
-  color: #F2F2F2;
+  background-color: #027367 !important;
+  color: #F2F2F2 !important;
 }
 
 /* primer fondo de user imagen*/
@@ -158,6 +158,10 @@
   }
 }
 
+.space {
+  margin-bottom: 3%; 
+}
+
 .btn-up {
   margin: 6% 0 6% 0 !important;
   background-color: #027367;
@@ -187,6 +191,12 @@
 
 /* pligin libro*/
 
+.userImg2 {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
 .btnBook {
   background-color: #027367 !important;
   color:#F2F2F2 !important;
@@ -208,4 +218,8 @@
   width: 40%;
   margin-bottom: 0.6%;
   margin-right: 0.4%;
+}
+
+.navBoock {
+  margin-bottom: 3% !important;
 }

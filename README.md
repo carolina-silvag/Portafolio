@@ -12,12 +12,18 @@ Portafolio con todos los proyectos hechos durante el programa intensivo de javas
 ## Portafolio Formal y Normal
 
 colores: #F2F2F2, #03A696, #027367, #014039, #000D0B.
+![Portafolio](assets/images/paleta.jpg)
 
 Diseño:
+![Portafolio](assets/images/foto4.jpg)
+![Portafolio](assets/images/foto1.jpg)
+![Portafolio](assets/images/foto2.jpg)
+![Portafolio](assets/images/foto3.jpg)
 
 ## Portafolio Personalizado
 
 colores: #0B0B0D, #80848C, #B7B2AE, #D9A441, #D999543.
+![Portafolio](assets/images/paleta2.jpg)
 
 Diseño:
 

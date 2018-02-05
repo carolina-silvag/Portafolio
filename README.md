@@ -12,13 +12,13 @@ Portafolio con todos los proyectos hechos durante el programa intensivo de javas
 ## Portafolio Formal y Normal
 
 colores: #F2F2F2, #03A696, #027367, #014039, #000D0B.
-![Portafolio](assets/images/paleta.png)
+![Portafolio](assets/images/paleta1.png)
 
 Diseño:
-![Portafolio](assets/images/foto4.JPG)
 ![Portafolio](assets/images/foto1.JPG)
 ![Portafolio](assets/images/foto2.JPG)
 ![Portafolio](assets/images/foto3.JPG)
+![Portafolio](assets/images/foto4.JPG)
 
 ## Portafolio Personalizado
 
@@ -32,46 +32,10 @@ Diseño:
 colores: aun no definidos.
 
 Diseño:
-
-
-
-<!-- ## Instalación
-
-
-Para poder usar nuestra librería, debes seguir los siguientes pasos:
-
-- Instalar jQuery. Solo necesitas agregar la línea siguiente a tu código.
-
-``` 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-```
-
-- Enlazas entonces el archivo ```main.js```.
-
-```
-  <script src="./main.js"></script>  
-```
-
-- También tenemos disponible nuestra versión CDN
-
-```
-<script src="https://rawgit.com/Niennis/cardify/Cardify/lib/main.js"></script>
-```
-
-
-- Agregas la siguiente línea bajo ```main.js```, y especificas clase(s), id(s), o elemento(s) del contenedor con las imágenes a afectar. Las imágenes deben estar contenidas en una col, por lo que se recomienda el uso de grids, o un framework.
-
-```
-$('.class').cardify({});
-```
-
-## Ejemplos
-
-![Cardify](https://78.media.tumblr.com/46426e4a9dec57138c7763a03bde8a27/tumblr_p2xpdkJcae1qdxt9to1_540.png)
- -->
-
- ## Ejemplos
-
-![Portafolio](assets/images/coder.jpg)
+![Portafolio](assets/images/foto21.JPG)
+![Portafolio](assets/images/foto22.JPG)
+![Portafolio](assets/images/foto23.JPG)
+![Portafolio](assets/images/foto24.JPG)
+![Portafolio](assets/images/foto25.JPG)
 
 

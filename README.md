@@ -1,25 +1,35 @@
-# CARDIFY
+# PORTAFOLIO
 
 ## Dependencias y herramientas
 
-![Github](https://img.shields.io/badge/github-inc-008080.svg?colorA=008080)
+<!-- ![Github](https://img.shields.io/badge/github-inc-008080.svg?colorA=008080)
 ![Javascript](https://img.shields.io/badge/javascript-ecma-green.svg)
-![jQuery](https://img.shields.io/badge/jquery-v3.3.1-yellowgreen.svg)
-![npm](https://img.shields.io/badge/npm-v5.5.1-yellow.svg)
-![NodeJS](https://img.shields.io/badge/nodejs-v8.9.0-orange.svg)
-![Mocha](https://img.shields.io/badge/mocha-v5.0.0-red.svg)
-![Chai](https://img.shields.io/badge/chai-v4.1.2-ff69b4.svg)
-![Eslint](https://img.shields.io/badge/eslint-v4.15.0-blue.svg)
-![Colaboradores](https://img.shields.io/badge/contributors-2-380B61.svg)
+![jQuery](https://img.shields.io/badge/jquery-v3.3.1-yellowgreen.svg) -->
 
 
-Cardify es una librería que nos permite mejorar la visualización de imágenes, destacándolas y enseñando información acerda de ellas.
+Portafolio con todos los proyectos hechos durante el programa intensivo de javascript, son tres con diseños distintos. Uno más formal y normal, el otro es personalizado y uno más entretenido.
 
-## Proyecto
+## Portafolio Formal y Normal
 
-Implementar un plugin que rescate las imágenes presentes en un contenedor, y reemplazarlas por un nuevo elemento que contenga la imagen, a la cual se le aplicará un filtro, bajando su brillo, además de mostrar la descripción presente en uno de los atributos de la imagen (atributo `alt`).
+colores: #F2F2F2, #03A696, #027367, #014039, #000D0B.
 
-## Instalación
+Diseño:
+
+## Portafolio Personalizado
+
+colores: #0B0B0D, #80848C, #B7B2AE, #D9A441, #D999543.
+
+Diseño:
+
+## Juego Portafolio
+
+colores: aun no definidos.
+
+Diseño:
+
+
+
+<!-- ## Instalación
 
 
 Para poder usar nuestra librería, debes seguir los siguientes pasos:
@@ -50,6 +60,11 @@ $('.class').cardify({});
 ```
 
 ## Ejemplos
+
+![Cardify](https://78.media.tumblr.com/46426e4a9dec57138c7763a03bde8a27/tumblr_p2xpdkJcae1qdxt9to1_540.png)
+ -->
+
+ ## Ejemplos
 
 ![Cardify](https://78.media.tumblr.com/46426e4a9dec57138c7763a03bde8a27/tumblr_p2xpdkJcae1qdxt9to1_540.png)
 

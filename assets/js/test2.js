@@ -1,19 +1,19 @@
-var $mybook     = $('#mybook');
-var $bttn_next    = $('#next_page_button');
-var $bttn_prev    = $('#prev_page_button');
-var $loading    = $('#loading');
-var $mybook_images  = $mybook.find('img');
-var cnt_images    = $mybook_images.length;
-var loaded      = 0;
+var $mybook = $('#mybook');
+var $bttn_next = $('#next_page_button');
+var $bttn_prev = $('#prev_page_button');
+var $loading = $('#loading');
+var $mybook_images = $mybook.find('img');
+var cnt_images = $mybook_images.length;
+var loaded = 0;
 //preload all the images in the book,
 //and then call the booklet plugin
 
-$mybook_images.each(function(){
-  var $img  = $(this);
-  var source  = $img.attr('src');
-  $('<img/>').load(function(){
+$mybook_images.each(function() {
+  var $img = $(this);
+  var source = $img.attr('src');
+  $('<img/>').load(function() {
     ++loaded;
-    if(loaded == cnt_images){
+    if (loaded == cnt_images) {
       $loading.hide();
       $bttn_next.show();
       $bttn_prev.show();
@@ -114,12 +114,12 @@ $mybook_images.each(function(){
         shadowBtmWidth:     50,                              
         // shadow width for bottom shadow
 
-        before:             function(){},                    
+        before:             function() {},                    
         // callback invoked before each page turn animation
-        after:              function(){}                     
+        after:              function() {}                     
         // callback invoked after each page turn animation
       });
-      Cufon.refresh(); // if you want to use cufon
+      // Cufon.refresh(); // if you want to use cufon
     }
-  }).attr('src',source);
+  }).attr('src', source);
 });

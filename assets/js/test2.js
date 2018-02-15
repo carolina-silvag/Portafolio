@@ -11,7 +11,8 @@ var loaded = 0;
 $mybook_images.each(function() {
   var $img = $(this);
   var source = $img.attr('src');
-  $('<img/>').load(function() {
+  console.log(source);
+  $('<img/>').load(source, function() {
     ++loaded;
     if (loaded == cnt_images) {
       $loading.hide();

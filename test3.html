@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flip</title>
+</head>
+<body>
+    <div id='card'> 
+      <div class='front'>
+        <div id='front' style='width: 200px; height: 200px; background-color: red'>
+        </div>
+      </div> 
+      <div class='back'>
+        <div  id='back' style='width: 200px; height: 200px; background-color:blue'>
+        </div>
+      </div>
+    </div>
+    
+    <div class='oculto' style='display: none'>
+        <div id='content1'>
+            content1
+        </div>
+        <div id='content2'>
+            content2
+        </div>
+        <div id='content3'>
+            content3
+        </div>
+        <div id='content4'>
+            content4
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+        $('#front').html($('#content1').html());
+        $('#back').html($('#content2').html());
+        var step = 1;
+
+        function contentNext() {
+            step += 1;
+            if (step == 4) {
+                step = 0;
+            }
+            if (isPair(step)) {
+                var next = step + 1;
+                console.log('front', step, next);
+                $('#front').html($('#content'+next).html());
+            } else {
+                var next = step + 1;
+                console.log('back', step, next);
+                $('#back').html($('#content'+next).html());
+            }
+        }
+
+        function isPair(number) {
+            return number % 2 === 0;
+        }
+
+        $("#card").flip({
+            axis: 'x',
+            trigger: 'click',
+            reverse: false
+        }).on('flip:done', flipDiv);
+
+        function flipDiv() {
+            contentNext();
+        }
+    </script>
+</body>
+</html>

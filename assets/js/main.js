@@ -4,8 +4,6 @@
   $.fn.extend({
     cardify: function() {
       return this.each(function() {
-        // crear figure en una imagen(img)
-        /*createFigureInImg(this);*/
 
         // ocultar text de figcaption
         hideFigcaption(this);
@@ -19,12 +17,6 @@
     }
   });
 })(jQuery);
-
-// crear figure en una imagen(img)
-function createFigureInImg(element) {
-//  $(element).find('img').css({'width': '100%'});
-  /*$(element).find('img').wrap('<figure></figure>');*/
-}
 
 // ocultar text de figcaption
 function hideFigcaption(element) {
@@ -44,7 +36,8 @@ function getInImg() {
     'margin': '0',
     'text-align': 'center'});
 
-  $(this).find('.btn-text a').css({'background':'transparent url(./assets/images/img2/circle.png) no-repeat 80% 0px',
+  $(this).find('.btn-text a').css({
+  'background':'transparent url(./assets/images/img2/circle.png) no-repeat 80% 0px',
   'display': 'inline-block',
   'width': '95px',
   'height': '41px',

@@ -1,12 +1,22 @@
+
 body {
-  background-image: url(../images/img2/fondo3.jpg);
+  background-image: url(../images/mesa4.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   /*overflow-x: hidden;*/
 }
 
 .presentacion {
   position: relative;
-  background-image: url(../images/img2/presentacion.png);
+  background-image: url(../images/img2/hojaP.png);
   background-repeat: no-repeat;
+  -webkit-background-size: cover 10%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 600px;
 
 }
@@ -40,9 +50,23 @@ body {
 
 .perfil-user {
   position: relative;
-  background-image: url(../images/img2/periodico2.png);
+  background-image: url(../images/img2/periodico-user.png);
   background-repeat: no-repeat;
-  height: 650px;
+  height: 620px;
+}
+
+.perfil-user2 {
+  position: relative;
+  background-image: url(../images/img2/periodico-user-2.png);
+  background-repeat: no-repeat;
+  height: 620px;
+}
+
+.contact-user {
+  position: relative;
+  background-image: url(../images/img2/contact-user.png);
+  background-repeat: no-repeat;
+  height: 620px;
 }
 /* Toggle Styles */
 
@@ -241,6 +265,8 @@ body {
 }
 
 .col-xs-7 {
-  outline: 2px solid red;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-65%) translateY(65%);
 }
 

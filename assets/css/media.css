@@ -11,11 +11,11 @@
     height: 50vh;
     transform: translateY(50%);
   }
-  /*#wrapper {
+  #wrapper {
     display: none;
   }
   #name {
     display: inline-block;
-  }*/
+  }
   
 }

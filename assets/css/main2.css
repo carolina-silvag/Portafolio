@@ -8,17 +8,64 @@ body {
   background-size: cover;
   /*overflow-x: hidden;*/
 }
+.home {
+  display: block
+}
+
+.Perfil {
+  display: none;
+}
+
+/* section home presentacion inicial*/
+
+.foto-user {
+  bottom: 50%;
+  left: 45%;
+  transform: translateX(-65%) translateY(65%);
+}
 
 .presentacion {
   position: relative;
   background-image: url(../images/img2/hojaP.png);
   background-repeat: no-repeat;
-  -webkit-background-size: cover 10%;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 600px;
 
+}
+
+.presentacion ul {
+  padding: 0; 
+}
+
+.perfil-user {
+  position: relative;
+  background-image: url(../images/img2/periodico-user.png);
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.perfil-user2 {
+  position: relative;
+  background-image: url(../images/img2/periodico-user-2.png);
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.front {
+  padding-left: 5%;
+}
+
+.contact-user {
+  position: relative;
+  background-image: url(../images/img2/contact-user.png);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 55%;
+  transform: translateX(-50%) translateY(5%);
+  height: 600px;
 }
 /*.book_wrapper-user {
   width: 100%;
@@ -33,7 +80,7 @@ body {
 .book_wrapper-user li{
   background:transparent url(../images/img2/circle.png) no-repeat 100% 0px;
   display:inline-block;
-  width:95px;
+  width:100px;
   height:41px;
   text-decoration:none;
   outline:none;
@@ -48,26 +95,6 @@ body {
   color:#555;
 }
 
-.perfil-user {
-  position: relative;
-  background-image: url(../images/img2/periodico-user.png);
-  background-repeat: no-repeat;
-  height: 620px;
-}
-
-.perfil-user2 {
-  position: relative;
-  background-image: url(../images/img2/periodico-user-2.png);
-  background-repeat: no-repeat;
-  height: 620px;
-}
-
-.contact-user {
-  position: relative;
-  background-image: url(../images/img2/contact-user.png);
-  background-repeat: no-repeat;
-  height: 620px;
-}
 /* Toggle Styles */
 
 #wrapper {
@@ -87,14 +114,12 @@ body {
   z-index: 1000;
   position: fixed;
   left: 250px;
-  
   width: 0;
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
   filter:brightness(0.4);
   background-color: rgba(0,0,0,0.8);
- 
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -256,17 +281,12 @@ body {
   }
 }
 
-.home {
-  display: block
+.info-user .info-caro {
+  padding: 5% 5% 5% 3%;
 }
 
-.Perfil {
-  display: none;
+.info-user .info-us {
+  padding: 5% 7% 5% 1%;
 }
 
-.col-xs-7 {
-  bottom: 50%;
-  left: 50%;
-  transform: translateX(-65%) translateY(65%);
-}
 

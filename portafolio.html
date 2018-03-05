@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="assets/css/bookblock.css">
   <link rel="stylesheet" href="assets/css/default.css">
   <link rel="stylesheet" href="assets/css/demo4.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
   <header>
@@ -28,9 +31,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="text-nav backgraundText1"><strong>Portafolio</strong></a></li>
-            <li><a href="#" class="text-nav backgraundText2"><strong>Sobre Mi</strong></a></li>
-            <li><a href="#" class="text-nav backgraundText3"><strong>Contacto</strong></a></li>
+            <li><a href="#sectionPortafolio" class="text-nav backgraundText1"><strong>Portafolio</strong></a></li>
+            <li><a href="#sectionAbout" class="text-nav backgraundText2"><strong>Sobre Mi</strong></a></li>
+            <li><a href="#sectionContact" class="text-nav backgraundText3"><strong>Contacto</strong></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -38,25 +41,24 @@
    </header>
   <section class="backgraund">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 text-center">
         <div id="image"></div>
         <div class="name">
-          <h2>Carolina Silva Guzmán</h2>
-          <span>Desarroladora Web</span>
+          <h2><strong>Carolina Silva Guzmán</strong></h2>
+          <p>Desarroladora Web</p>
           <div>
-            <img src="assets/images/usuaria.jpg" class="img-responsive img-circle userImg" alt="">
+            <img src="assets/images/img1/usuaria.jpg" class="img-responsive img-circle userImg" alt="">
           </div>
-          <button class="btn btn-default btnUp" type="submit">Portafolio</button>
-          <button class="btn btn-default btnUp" type="submit">Sobre Mi</button> 
+          <p class="text-justify">Como desarrolladora web Front-End, mi formación académica, humana y laboral en Laboratoria, se ha enfocado al desarrollo productivo y creativo, a través de la implementación de metodología ágil. Soy una profesional comprometida y perseverante con la investigación continua y el trabajo en equipo.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="backgraundPortafolio">
+  <section class="backgraundPortafolio" id="sectionPortafolio">
     <div class="text-center">
       <h2 class="text-center subtitle"><strong>PORTAFOLIO</strong></h2>
       <div class="text-center contImgUnicorn">
-        <img class="imgUnicorn" src="assets/images/uni1.png" alt="">
+        <img class="imgUnicorn" src="assets/images/img1/uni1.png" alt="">
       </div>
     </div>
     <!-- <h1>Use Bootstrap's carousel to show multiple items per slide.</h1> -->
@@ -65,9 +67,9 @@
         <div class="carousel slide multi-item-carousel" id="theCarousel">
           <div class="carousel-inner">
             <div class="item active">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder.jpg"></a>
+                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder.jpg"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Ver Pagina</button>
@@ -76,9 +78,9 @@
               </div>
             </div>
             <div class="item">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder2.jpg"></a>
+                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder2.jpg"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Ver Pagina</button>
@@ -87,9 +89,9 @@
               </div>
             </div>
             <div class="item">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder3.jpg"></a>
+                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder3.jpg"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Ver Pagina</button>
@@ -98,9 +100,9 @@
               </div>
             </div>
             <div class="item">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#" id="terror" value=""><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder.jpg"></a>
+                  <a href="#" id="terror" value=""><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder.jpg"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Ver Pagina</button>
@@ -109,9 +111,9 @@
               </div>
             </div>
             <div class="item">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder2.jpg" class="img-responsive"></a>
+                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder2.jpg" class="img-responsive"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Ver Pagina</button>
@@ -120,9 +122,9 @@
               </div>
             </div>
             <div class="item">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder3.jpg"></a>
+                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder3.jpg"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Ver Pagina</button>
@@ -134,9 +136,9 @@
             <!-- Example item start:  -->
 
             <div class="item">
-              <div class="col-xs-4 portafolio">
+              <div class="col-md-4 col-xs-12 portafolio">
                 <div class="outline text-center">
-                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/coder.jpg"></a>
+                  <a href="#"><img class="portafolio-contenedor imgCarrusel img-responsive" src="assets/images/img1/coder.jpg"></a>
                   <h3>Card title</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel modi incidunt obcaecati nobis unde, dolores nam quis, minus quia tenetur nemo rerum in illo numquam quas maiores deserunt. Voluptatibus, molestias!</p>
                   <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">About</button>
@@ -153,169 +155,144 @@
       </div>
     </div>
   </section>
-  <section class="backgraundAbout">
+  <section class="backgraundAbout" id="sectionAbout">
     <div class="text-center">
-      <h2 class="subtitle about"><strong>Acerca de Mi</strong></h2>
+      <h2 class="subtitle about"><strong>ACERCA DE MI</strong></h2>
       <div class="text-center contImgUnicorn2">
-        <img class="imgUnicorn2" src="assets/images/uniBlanco2.png" alt="">
+        <img class="imgUnicorn2" src="assets/images/img1/uniBlanco2.png" alt="">
+      </div>
+    </div>
+    <div hidden id="movilAbout" class="row text-center">
+      <div class="col-xs-5 centrar">
+        <a href="#"><div class="soy"></div></a>
+        <p>Quien soy</p>
+      </div>
+      <div class="col-xs-7 centrar">
+        <a href="#"><div class="valores"></div></a>
+        <p>Mis valores</p>
+      </div>
+      <div class="col-xs-7 centrar">
+        <a href="#"><div class="gusto"></div></a>
+        <p>Lo que me gusta</p>
+      </div>
+      <div class="col-xs-5 centrar">
+        <a href="#"><div class="intereses"></div></a>
+        <p>Mis intereses</p>
+      </div>
+      <div class="col-xs-5 centrar">
+        <a href="#"><div class="mas"></div></a>
+        <p>Un poco más de mi</p>
+      </div>
+      <div class="col-xs-7 centrar">
+        <a href="#"><div class="lab"></div></a>
+        <p>Como llegue a Laboratoria</p>
+      </div>
+      <div class="col-xs-7 centrar">
+        <a href="#"><div class="saber"></div></a>
+        <p>Mis conocimientos</p>
+      </div>
+      <div class="col-xs-5 centrar">
+        <a href="#"><div class="futuro"></div></a>
+        <p>Mi futuro</p>
       </div>
     </div>
     <div class="container">
-      <div class="bb-custom-wrapper">
+      <div id="bookAbout" class="bb-custom-wrapper">
         <div id="bb-bookblock" class="bb-bookblock">
           <div class="bb-item">
             <div class="bb-custom-firstpage">
               <div>
-                <img src="assets/images/usuaria.jpg" class="img-responsive img-circle userImg2" alt="">
+                <img src="assets/images/img1/usuaria.jpg" class="img-responsive img-circle userImg2" alt="">
               </div>
-              <span>Aquí Curriculum</span>
-              <button class="btn btn-default btn-up" href="http://laweb.com" type="submit">Descarga</button> 
+              <span class="curriculum">Aquí Curriculum</span>
+              <button class="btn btn-default btnDescarga" href="http://laweb.com" type="submit">Descarga</button> 
             </div>
             <div class="bb-custom-side">
-              <p>Mi nombre es Carolina Silva Guzmán, pero todos me dicen Carito o Caro, tengo 26 años y vivo actualmente en la Comuna de Puente Alto. Estudie en el Liceo Municipal Chiloé, enseñanza basica y enseñanza media</p>
+              <p>Mi nombre es Carolina Silva Guzmán, pero todos me dicen Carito o Caro, tengo 26 años y vivo actualmente en la Comuna de Puente Alto. Estudie en el Liceo Municipal Chiloé, enseñanza básica y enseñanza media.</p>
             </div>
           </div>
           <div class="bb-item">
             <div class="bb-custom-side row">
-              <div class="col-md-4 col-lg-4">
+              <div class="col-md-12 col-lg-12">
                 <div class="thumbnail">
-                  <img src="assets/images/diciplina.jpg" alt="" class="img-responsive">
+                  <img src="assets/images/img1/disciplina.jpg" alt="" class="img-responsive">
                 </div>
               </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/perseverancia.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/paciencia2.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/honestidad.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/diciplina2.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <!-- <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/paciencia1.jpg" alt="" class="img-responsive">
-                </div>
-              </div> -->
             </div>
             <div class="bb-custom-side">
-              <p>En esta epoca adquiri muchos de los valores y virtudes que tengo hoy en día, como la paciencia, la honestidad, el cumplir con mis compromisos, el amor a aprender cosas nuevas y enseñar a otros, la diciplina para ser constante cuando algo no es facil, el valor de una amistad entre otras cosas, uno nunca deja de aprender.</p>
+              <p>En esta época adquirí muchos de los valores y virtudes que tengo hoy en día, como la paciencia, la honestidad, el cumplir con mis compromisos, el amor a aprender cosas nuevas y enseñar a otros, la disciplina para ser constante cuando algo no es fácil, el valor de una amistad entre otras cosas, uno nunca deja de aprender.</p>
             </div>
           </div>
           <div class="bb-item">
             <div class="bb-custom-side row">
-              <div class="col-md-4 col-lg-4">
+              <div class="col-md-12 col-lg-12">
                 <div class="thumbnail">
-                  <img src="assets/images/peliculaHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/serieHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/juegoMesaHolme.png" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/juegoPlayHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/mangaHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/librosHolme.jpg" alt="" class="img-responsive">
+                  <img src="assets/images/img1/mangaHolme.jpg" alt="" class="img-responsive">
                 </div>
               </div>
             </div>
             <div class="bb-custom-side">
-              <p>Debido a que nunca dejo de aprender tengo gustos muy diversos, me encanta leer novelas de misterio y en general leer de todo. Sir Artur Conan Doyle y Sherlok Holme son mi autor y personaje preferidos, pero tambien me gusta agatha cristie, ...</p>
+              <p>Debido a que nunca dejo de aprender tengo gustos muy diversos, me encanta leer novelas de misterio y en general leer de todo. Sir Artur Conan Doyle y Sherlock Holmes son mi autor y personaje preferidos, pero también me gusta Agatha Christie, otros.</p>
             </div>
           </div>
           <div class="bb-item">
             <div class="bb-custom-side row">
-              <div class="col-md-4 col-lg-4">
+              <div class="col-md-12 col-lg-12">
                 <div class="thumbnail">
-                  <img src="assets/images/peliculaHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/serieHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/juegoMesaHolme.png" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/juegoPlayHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/mangaHolme.jpg" alt="" class="img-responsive">
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div class="thumbnail">
-                  <img src="assets/images/librosHolme.jpg" alt="" class="img-responsive">
+                  <img src="assets/images/img1/gustos4.jpg" alt="" class="img-responsive">
                 </div>
               </div>
             </div>
             <div class="bb-custom-side">
-              <p>Los juegos de mesa son mi distracción ideal, sobre todo si me hacen pensar o es de aventura, por lo cual, decent, pandemic, catan entre otros juegos me encantan.</p>
+              <p>Los juegos de mesa son mi distracción ideal, sobre todo si me hacen pensar o es de aventura, por lo cual, descent, pandemia, catan entre otros juegos, me encantan!.</p>
             </div>
           </div>
           <div class="bb-item">
             <div class="bb-custom-side">
-              <p>Al terminar el colegio, me titule como cientifico-hunanista, en el Liceo Chiloe y ademas, tecnico en Gastronomia, en el Liceo San Geronimo. Trabaje Durante un tiempo como asistente de cocina, aquí fue donde aprendi a trabajar en equipo y bajo presión contaste.</p>
+              <div class="col-md-12 col-lg-12">
+                <div class="thumbnail">
+                  <img src="assets/images/img1/chocolate.jpg" alt="" class="img-responsive">
+                </div>
+              </div>
             </div>
             <div class="bb-custom-side">
-              
-            </div>
-          </div>
-          <div class="bb-item">
-            <div class="bb-custom-side">
-              <p>Luego entre a la universidad Federico Santa Maria a estudiar Construcción Civil, esta carrera me encanta, pero por falta de recursos tuve que congelar. Aqui fue donde descibri que me gusta programar, es asi que me intereso Laboratoria y postule.</p>
-            </div>
-            <div class="bb-custom-side">
-            
+              <p>Al terminar el colegio, me titule como científico - humanista, en el Liceo Chiloé y además, técnico en Gastronomía, en el Liceo San Gerónimo. Trabaje Durante un tiempo como asistente de cocina, aquí fue donde aprendí a trabajar en equipo y bajo presión contaste.</p>
             </div>
           </div>
           <div class="bb-item">
             <div class="bb-custom-side">
-              <p>En Laboratoria aprendi un mundo nuevo de JS, adquiri conocimiento de CSS, HTML, JS, jQuery, librerias y plugins para un mejor desarrollo, framework como Bootstrap y materialize, utilizar apis y manejar firebase.</p>
+              <div class="col-md-12 col-lg-12">
+                <div class="thumbnail">
+                  <img src="assets/images/img1/construccion.jpg" alt="" class="img-responsive">
+                </div>
+              </div>
             </div>
             <div class="bb-custom-side">
-              <p>Cotton candy caramels tootsie roll soufflé powder lemon drops carrot cake danish. Cotton candy candy canes fruitcake muffin gingerbread. Jujubes soufflé gingerbread donut donut.</p>
+              <p>Luego entré a la universidad Federico Santa María a estudiar Construcción Civil, esta carrera me encanta, pero por falta de recursos tuve que congelar. Aquí fue donde descubrí que me gusta programar, es así como me intereso Laboratoria y postule.</p>
             </div>
           </div>
           <div class="bb-item">
             <div class="bb-custom-side">
-              <p>Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes oat cake toffee croissant muffin.</p>
+              <div class="col-md-12 col-lg-12">
+                <div class="thumbnail">
+                  <img src="assets/images/img1/Laboratoria.jpg" alt="" class="img-responsive">
+                </div>
+              </div>
             </div>
             <div class="bb-custom-side">
-              <p>Chocolate bar tiramisu marzipan. Croissant soufflé croissant lollipop liquorice dragée chupa chups carrot cake. Liquorice lollipop halvah toffee lollipop.</p>
+              <p>En Laboratoria aprendí un mundo nuevo de JS, adquirí conocimiento de CSS, HTML, JS, jQuery, librerías y plugin para un mejor desarrollo, Framework como Bootstrap y Materialize, utilizar Apis, manejar Firebase, React, Angular y más.</p>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side">
+              <div class="col-md-12 col-lg-12">
+                <div class="thumbnail">
+                  <img src="assets/images/img1/coder3.jpg" alt="" class="img-responsive">
+                </div>
+              </div>
+            </div>
+            <div class="bb-custom-side">
+              <p>Actualmente me he dedicado a aprender más y más cada día, para implementar todo mi conocimiento de las distintas áreas, al desarrollo de mi vida personal y profesional.</p>
             </div>
           </div>
         </div>
@@ -329,13 +306,74 @@
       </div>
     </div><!-- /container -->
   </section>
-  <section>
+  <section class="container" id="sectionContact">
     <div class="text-center">
-      <h2><strong>CONTACTARME</strong></h2>
+      <h2 class="subtitle subTitle text-center"><strong>CONTACTARME</strong></h2>
+      <div class="text-center contImgUnicorn">
+        <img class="imgUnicorn" src="assets/images/img1/uni1.png" alt="">
+      </div>
+    </div>
+    <div hidden id="nav-tabs">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a data-toggle="tab" href="#home">DEJAME UN MENSAJE</a></li>
+        <li><a data-toggle="tab" href="#menu1">INFORMACION DE CONTACTO</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <form action="" class="formContactMovil">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Nombre</label>
+              <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Número de Contacto</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Mensaje</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <div class="form-group infoContact">
+            <label for="inputEmail3" class="col-sm-2 control-label">Dirección</label>
+            <div class="col-sm-10">
+              <p>Ejercito Libertador 2120 casa 426, Puente Alto</p>
+            </div>
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <p>carolinasguzman@gmail.com</p>
+            </div>
+            <label for="inputEmail3" class="col-sm-2 control-label">Movil</label>
+            <div class="col-sm-10">
+              <p>+569-66705559</p>
+            </div>
+            <ul class="otrosMedios">
+              <li><i class="fa fa-facebook-square fa-3x"></i></li>
+              <li><i class="fa fa-google-plus-square fa-3x"></i></li>
+              <li><i class="fa fa-github-square fa-3x"></i></li>
+              <li><i class="fa fa-linkedin fa-3x"></i></li>
+              <li><i class="fa fa-twitter-square fa-3x"></i></li>
+              <li><i class="fa fa-instagram fa-3x"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      <!-- <ul class="nav nav-tabs nav-justified">
+        <li role="presentation" class="active"><a href="#">DEJAME UN MENSAJE</a></li>
+        <li role="presentation"><a href="#">INFORMACION DE CONTACTO</a></li>
+      </ul> -->
     </div>
     <div class="row">
-      <div class="col-xs-6">
-        <form action="">
+      <div class="col-md-6 col-xs-12">
+        <form action="" class="formContact">
           <div class="form-group">
             <label for="exampleInputEmail1">Nombre</label>
             <input class="form-control" type="text" placeholder="Nombre">
@@ -350,29 +388,33 @@
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Mensaje</label>
-            <textarea class="form-control" rows="3"></textarea>
+            <textarea class="form-control" rows="5"></textarea>
           </div>
         </form>
       </div>
-      <div class="col-xs-6">
-        <h3 class="text-center">Información de Contacto</h3>
-        <div class="form-group">
+      <div class="col-md-6 col-xs-12" id="myInfo">
+        <h3 class="text-center infoContactTitle">Información de Contacto</h3>
+        <div class="form-group infoContact">
           <label for="inputEmail3" class="col-sm-2 control-label">Dirección</label>
           <div class="col-sm-10">
             <p>Ejercito Libertador 2120 casa 426, Puente Alto</p>
           </div>
-        </div>
-        <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
           <div class="col-sm-10">
             <p>carolinasguzman@gmail.com</p>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label">Mobil</label>
+          <label for="inputEmail3" class="col-sm-2 control-label">Movil</label>
           <div class="col-sm-10">
             <p>+569-66705559</p>
           </div>
+          <ul class="otrosMedios">
+            <li><a href="mailto:carolinasguzman@gmail.com?subject=importante contacto" class="fa fa-google-plus-square fa-3x"></a></li>
+            <li><a href="https://github.com/carolina-silvag" class="fa fa-github-square fa-3x"></a></li>
+            <li><a href="https://www.linkedin.com/in/carolina-silva-guzm%C3%A1n-8a6790159/" class="fa fa-linkedin fa-3x"></a></li>
+            <li><a href="https://www.facebook.com/carolinasguzman" class="fa fa-facebook-square fa-3x"></a></li>
+            <li><a href="https://twitter.com/" class="fa fa-twitter-square fa-3x"></a></li>
+            <li><a href="https://www.instagram.com/carolinasilvaguzman/?hl=es-la" class="fa fa-instagram fa-3x"></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -391,7 +433,6 @@
   <!-- para utilizar firebase -->
   <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
   <script src="assets/js/app.js"></script>
-  <script>$('.bb-custom-side').cardify({});</script>
   <script>Page.init();</script>
 </body>
 </html>

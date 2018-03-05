@@ -34,7 +34,7 @@
   color: #03A696 !important;
   /*color: #027367 !important;*/
 }
-/*#03A696*/
+
 .textBackgraund {
   background-color: #027367;
 }
@@ -47,12 +47,16 @@
 /* primer fondo de user imagen*/
 #image {
   height: 100vh;
-  background-image: url('../images/coder.jpg');
+  background-image: url('../images/img1/coder.jpg');
   filter:brightness(0.5);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #F2F2F2;
+}
+
+.name h2 {
+  font-size: 250%;
 }
 
 .name {
@@ -64,6 +68,7 @@
   text-align: center;
   font-weight: bold;
   color: #fff;
+  font-size: 115%;
 }
 
 .userImg {
@@ -84,6 +89,9 @@
 }
 
 /* section portafolio*/
+.portafolio {
+  padding: 1%; 
+}
 .subtitle {
   font-size: 250%;
   padding-top: 3%;
@@ -188,8 +196,23 @@
 .about {
   color: #F2F2F2;
 }
+.btnDescarga {
+  margin: 6% 0 6% 0 !important;
+  background-color: #027367;
+  color: #F2F2F2;
+}
 
-/* pligin libro*/
+.btnDescarga:hover {
+  background-color: #F2F2F2;
+  color: #014039;
+  border: 1px solid #014039;
+}
+
+.curriculum, .bb-custom-side p{
+  color: #000D0B;
+}
+
+/* plugin libro*/
 
 .userImg2 {
     width: 50%;
@@ -222,4 +245,115 @@
 
 .navBoock {
   margin-bottom: 3% !important;
+}
+
+.thumbnail {
+  margin: 5%;
+}
+
+#image-user {
+  
+   
+}
+
+/* acerca de mi movil*/
+.centrar {
+  padding: 0;
+  margin: 0;
+}
+.soy {
+  height: 200px;
+  background-color: #014039;
+}
+.centrar p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 115%;
+}
+.valores {
+  height: 200px;
+  background-image: url(../images/img1/paciencia2.jpg);
+  filter:brightness(0.6);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F2F2F2;
+}
+.gusto {
+  height: 200px;
+  background-image: url(../images/img1/librosHolme.jpg);
+  filter:brightness(0.5);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.intereses {
+  height: 200px;
+  background-color: #014039; 
+}
+.mas {
+  height: 200px;
+  background-color: #014039;
+}
+
+.lab {
+  height: 200px;
+  background-image: url(../images/img1/Laboratoria.jpg);
+  filter:brightness(0.5);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F2F2F2;
+}
+.saber {
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/img1/coder3.jpg);
+  filter:brightness(0.5);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F2F2F2;
+}
+
+.futuro {
+  height: 200px;
+  background-color: #014039;
+}
+/* section contactame*/
+.subTitle {
+  color: #000D0B;
+}
+
+.otrosMedios li{
+  color: #014039;
+  display: inline-block;
+  padding: 10% 2% 0 2%;
+}
+.otrosMedios li a{
+  color: #014039;
+}
+.otrosMedios li a:hover{
+  color:  #03A696;
+}
+
+.formContact {
+  color: #000D0B;
+}
+
+.infoContact {
+  color: #000D0B;
+  padding-left: 5%;
+}
+
+.infoContactTitle {
+  color: #000D0B;
+  padding-bottom: 4%;
 }

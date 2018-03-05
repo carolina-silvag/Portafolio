@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  $( window ).resize(function() {
+    if (screen.width > 995) {
+      $('#movilAbout').hide();
+      $('#bookAbout').show();
+      $('#nav-tabs').hide();
+    } else {
+      $('#bookAbout').hide();
+      $('#movilAbout').show();
+      $('#nav-tabs').show();
+    }
+    console.log(screen.width);
+  });
   /* para cuando el scroll baja*/
   function changeMenuByScroll() {
     if ($(this).scrollTop() > 100) {
@@ -12,12 +24,12 @@ $(document).ready(function() {
     } else {
       $('.backgraundText1').removeClass('textBackgraund');
     }
-    if ($(this).scrollTop() > 1370 & $(this).scrollTop() < 2300) {
+    if ($(this).scrollTop() > 1370 & $(this).scrollTop() < 2180) {
       $('.backgraundText2').addClass('textBackgraund');
     } else {
       $('.backgraundText2').removeClass('textBackgraund');
     }
-    if ($(this).scrollTop() > 2300) {
+    if ($(this).scrollTop() > 2180) {
       $('.backgraundText3').addClass('textBackgraund');
     } else {
       $('.backgraundText3').removeClass('textBackgraund');
@@ -35,17 +47,23 @@ $(document).ready(function() {
 });
 
 // fondo de presentacion
-var arrImagenes = ['assets/images/coder.jpg', 'assets/images/coder2.jpg', 'assets/images/coder3.jpg', 'assets/images/gustos.png' ];
-var imagenActual = 'assets/images/coder.jpg';
-var idContenedor = 'image';
-setInterval(function() {
+
+setInterval(changeImagePresentacion, 10000);
+
+function changeImagePresentacion() {
+  var arrImagenes = ['assets/images/img1/coder.jpg', 'assets/images/img1/coder2.jpg', 'assets/images/img1/coder3.jpg', 'assets/images/img1/gustos.png' ];
+  var imagenActual = 'assets/images/img1/coder.jpg';
+  var idContenedor = 'image';
+  changeImage(imagenActual, arrImagenes, idContenedor);
+}
+
+function changeImage(imagenActual, arrImagenes, idContenedor) {
   do {
     var imgRand = arrImagenes[Math.ceil(Math.random() * (arrImagenes.length - 1))];
   } while (imgRand === imagenActual);
   imagenActual = imgRand;
   cambiarImagenFondo(imagenActual, idContenedor);
-}, 10000);
-
+}
 
 function cambiarImagenFondo(nuevaImagen, contenedor) {
   console.log(nuevaImagen, contenedor);
@@ -139,23 +157,30 @@ var Page = (function() {
 // carrusel
 
 // Instantiate the Bootstrap carousel
-$('.multi-item-carousel').carousel({
-  interval: false
-});
+if (screen.width > 995) {
+  $('.multi-item-carousel').carousel({
+    interval: false
+  });
 
 
-// para cada diapositiva en el carrusel, copie el ítem de la siguiente diapositiva en la diapositiva.
-// Haz lo mismo para el próximo, siguiente artículo.
-$('.multi-item-carousel .item').each(function() {
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  if (next.next().length > 0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  } else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
-});
+  // para cada diapositiva en el carrusel, copie el ítem de la siguiente diapositiva en la diapositiva.
+  // Haz lo mismo para el próximo, siguiente artículo.
+  $('.multi-item-carousel .item').each(function() {
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    if (next.next().length > 0) {
+      next.next().children(':first-child').clone().appendTo($(this));
+    } else {
+      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+  });
+} else {
+  $('#movilAbout').show();
+  $('#bookAbout').hide();
+  $('.formContact').hide();
+  $('#myInfo').hide();
+}

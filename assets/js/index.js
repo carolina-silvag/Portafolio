@@ -23,6 +23,8 @@ $(document).ready(function(){
   animInfinite('Carolina Silva');
   function typePantalla() {
     if (screen.width < 1024) {
+      $('#wrapper').hide();
+      $('#name').show();
       $('.bienvenido').fadeOut(4000, function aparecer() {
         $('.fondo').css({'transform': 'translateY(10%)'});
       });

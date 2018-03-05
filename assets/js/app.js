@@ -11,8 +11,8 @@ $(document).ready(function() {
       $('#movilAbout').show();
       $('#contactFormMovil').show();
     }
-    console.log(screen.width);
   });
+
   /* para cuando el scroll baja*/
   function changeMenuByScroll() {
     if ($(this).scrollTop() > 100) {
@@ -68,7 +68,6 @@ function changeImage(imagenActual, arrImagenes, idContenedor) {
 }
 
 function cambiarImagenFondo(nuevaImagen, contenedor) {
-  console.log(nuevaImagen, contenedor);
   contenedor = $('#' + contenedor);
   contenedor.css('background-image', 'url(' + nuevaImagen + ')');
   // cargar imagen primero
@@ -184,3 +183,4 @@ if (screen.width > 995) {
   $('#movilAbout').show();
   $('#bookAbout').hide();
 }
+

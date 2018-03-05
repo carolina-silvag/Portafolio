@@ -445,12 +445,21 @@
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.bookblock.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDqHtzsFOZIUIs2PXcdrZHJP0JPUJQ4J_Q",
+      authDomain: "portafolio-196113.firebaseapp.com",
+      databaseURL: "https://portafolio-196113.firebaseio.com",
+      projectId: "portafolio-196113",
+      storageBucket: "",
+      messagingSenderId: "1093628349662"
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="assets/js/main.js"></script>
-  <!-- <script>
-    Page.init();
-  </script> -->
-  <!-- para utilizar firebase -->
-  <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
   <script src="assets/js/app.js"></script>
   <script>Page.init();</script>
 </body>

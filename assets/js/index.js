@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   $('.selection').hide();
   typePantalla();
@@ -19,13 +20,13 @@ $(document).ready(function(){
       $('.text:nth-child(30)'), speed, {autoAlpha: 1.5, delay: 3.5, onComplete: subtitleEfect}
     );
   }
-  subtitleEfect
+  // subtitleEfect
   animInfinite('Carolina Silva');
   function typePantalla() {
     if (screen.width < 1024) {
       $('#wrapper').hide();
       $('#name').show();
-      $('.bienvenido').fadeOut(4000, function aparecer() {
+      $('.bienvenido').fadeOut(5000, function aparecer() {
         $('.fondo').css({'transform': 'translateY(10%)'});
       });
     } else {
@@ -38,6 +39,6 @@ $(document).ready(function(){
 
 function subtitleEfect() {
   $('.selection').fadeIn(1000, function parpadear() { 
-    $('#select').fadeIn(100).delay(150).fadeOut(100, parpadear) 
+    $('#select').fadeIn(50).delay(150).fadeOut(100, parpadear); 
   });
 }

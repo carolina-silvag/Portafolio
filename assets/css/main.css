@@ -170,11 +170,12 @@
   margin-bottom: 3%; 
 }
 
-.btn-up {
+.btn-up, .btn-envio {
   margin: 6% 0 6% 0 !important;
   background-color: #027367;
   color: #F2F2F2;
 }
+
 .outline {
   outline: 1px solid #014039;
   padding: 2%;
@@ -287,7 +288,7 @@
 }
 .gusto {
   height: 200px;
-  background-image: url(../images/img1/librosHolme.jpg);
+  background-image: url(../images/img1/mangaHolme.jpg);
   filter:brightness(0.5);
   background-position: center center;
   background-repeat: no-repeat;
@@ -344,16 +345,24 @@
   color:  #03A696;
 }
 
-.formContact {
+.formContact, .formContactMovil, .infoContactMovil {
+  margin-top: 10%;
   color: #000D0B;
 }
 
-.infoContact {
+.infoContact{
   color: #000D0B;
   padding-left: 5%;
+}
+#myInfo {
+  margin-top: 4%;
 }
 
 .infoContactTitle {
   color: #000D0B;
   padding-bottom: 4%;
+}
+
+.btn-envio {
+  text-align: center;
 }

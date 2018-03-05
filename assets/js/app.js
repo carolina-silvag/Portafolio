@@ -1,13 +1,15 @@
 $(document).ready(function() {
   $( window ).resize(function() {
     if (screen.width > 995) {
+      $('#contactForm').show();
       $('#movilAbout').hide();
       $('#bookAbout').show();
-      $('#nav-tabs').hide();
+      $('#contactFormMovil').hide();
     } else {
+      $('#contactForm').hide();
       $('#bookAbout').hide();
       $('#movilAbout').show();
-      $('#nav-tabs').show();
+      $('#contactFormMovil').show();
     }
     console.log(screen.width);
   });
@@ -161,8 +163,6 @@ if (screen.width > 995) {
   $('.multi-item-carousel').carousel({
     interval: false
   });
-
-
   // para cada diapositiva en el carrusel, copie el ítem de la siguiente diapositiva en la diapositiva.
   // Haz lo mismo para el próximo, siguiente artículo.
   $('.multi-item-carousel .item').each(function() {
@@ -179,8 +179,8 @@ if (screen.width > 995) {
     }
   });
 } else {
+  $('#contactForm').hide();
+  $('#contactFormMovil').show();
   $('#movilAbout').show();
   $('#bookAbout').hide();
-  $('.formContact').hide();
-  $('#myInfo').hide();
 }

@@ -46,7 +46,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     changeMenuByScroll();
   });
+  
 });
+
+var database = firebase.database();
+var storage = firebase.storage()
 
 // fondo de presentacion
 
@@ -183,4 +187,41 @@ if (screen.width > 995) {
   $('#movilAbout').show();
   $('#bookAbout').hide();
 }
+
+
+$('.btn-envioMovil').click(addContactMovil);
+function addContactMovil() {
+  let nameContact = $('#nameContact1').val();
+  let email = $('#inputEmail1').val();
+  let phone = $('#inputNumber1').val();
+  let msn = $('#msn1').val();
+
+  let dataContact = {
+    name: nameContact,
+    email: email,
+    phone: phone,
+    msn: msn
+  }
+  database.ref('/contact/portafolioFormalMovil').push(dataContact); 
+}
+
+$('#btn-envio').click(addContact);
+function addContact() {
+  let nameContact = $('#nameContact').val();
+  let email = $('#inputEmail').val();
+  let phone = $('#inputNumber').val();
+  let msn = $('#msn').val();
+
+  let dataContact = {
+    name: nameContact,
+    email: email,
+    phone: phone,
+    msn: msn
+  };
+
+  console.log(dataContact);
+  database.ref('/contact/portafolioFormal').push(dataContact); 
+}
+
+
 
